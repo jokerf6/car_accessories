@@ -1,0 +1,32 @@
+{
+  "name": "car-accessories",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node",
+    "start": "node server.js",
+    "swagger-autogen": "node ./swagger.js"
+  },
+  "author": "Fahd and Karim",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "passport": "^0.6.0",
+    "sequelize": "^6.21.4",
+    "swagger-autogen": "^2.21.5",
+    "swagger-ui-express": "^4.5.0",
+    "uuid": "^8.3.2"
+  }
+}

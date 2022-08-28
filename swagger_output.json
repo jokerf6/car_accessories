@@ -1,0 +1,104 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "",
+  "basePath": "",
+  "tags": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "schemes": [],
+  "securityDefinitions": {},
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "/"
+        ],
+        "description": "to get homepage page",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "page opened"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "/"
+        ],
+        "description": "to login",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "login",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "example": "string"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "login successfully",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "example": "200"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Login successfully"
+                },
+                "data": {
+                  "type": "string",
+                  "example": "Login successfully"
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            }
+          },
+          "400": {
+            "description": "user not found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "example": "400"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "user not found"
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
